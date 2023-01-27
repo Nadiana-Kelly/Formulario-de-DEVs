@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+        <title>Document</title>
+    </head>
+    <body>
+       
+        <div class="tudo">
+            <div class="partedparte"></div>
+                <div class="parte1">
+                    <h2 class="title title-primary">Bem vindo Dev!</h2>
+                    <div class="p">
+                        <p class="description description-primary">Cadastre suas informações no formulário</p>
+                   </div>
+                   
+                        <img src="top1.svg" alt="desenvolvedores" class="imagem">
+           
+                </div>
+            <div class="parte2">
+                <form class="formulario">
+                    
+                        <div class="campo1">
+                            <input type="text" name="nome" id="nome" class="teste" placeholder="Nome" >
+                            <div class="underline" ></div>
+                            
+                        </div>
+
+                        <div class="campo1">
+                            <input type="text" name="sobrenome" id="sobrenome"  class="teste" placeholder="Sobrenome" >
+                            <div class="underline" ></div>
+                            
+                        </div>
+
+                        <div class="campo1">
+                            
+                            <input type="email" name="email" id="email" class="teste" placeholder="E-mail" >
+                            <div class="underline" ></div>
+                        </div>
+                    
+                    <div class ="aplicacao">
+                        <div class="t">
+                            <label>Qual aplicação você desenvolve?</label>
+                        </div>
+                        <div class="aplica">
+                            <input type="radio" name="dev" value="devFront" > 
+                                <label class="linha"></label>
+                                <label class="alinha"> Front - End </label>
+                                <label class="linha"></label>
+                                <input type="radio" name="dev" value="devBack">
+                                <label class="linha"></label>
+                                <label class="alinha"> Back - End </label>
+                                <label class="linha"></label>
+                                <input type="radio" name="dev" value="devFullS" >
+                                <label class="linha"></label>
+                                <label class="alinha"> FullStack  </label>
+                        
+                            <br></br>
+                        </div>
+                        
+                    </div>
+                    </fieldset>
+                    <br></br>
+                    <div class="campo1">
+                        <div class="t">
+                        <label>Qual seu nível de senioridade?</label>
+                        <div class="tj">
+
+                        </div>
+                        </div>
+                        <select name="select" class="teste">
+                            <option value="Junior" selected>Nível - Junior</option>
+                            <option value="Pleno">Nível - Pleno</option>
+                            <option value="Senior">Nível - Senior</option>
+                        </select>
+                        <div class="underline" ></div>
+                    </div>
+                
+
+                    <fieldset>
+                                <div class="t">
+                                <label>Quais destas opções você sabe utilizar?</label><br></br>
+                            </div>
+                                <div class="mudar2">
+                                <label class="container"> Java
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="container"> Python
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="container"> C++
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="container"> React
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                </label>
+                        
+                         
+                        </div>
+                    
+                    </fieldset>
+                
+                    <button class="botao" type="submit">Enviar</button>
+            </form>
+            
+        </div> <!--parte2-->
+    </div> <!-- parte de parte -->
+        </div> <!-- tudo -->
+    </body>
+</html>
