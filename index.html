@@ -1,88 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-
-        <link rel="stylesheet" type="text/css" href="./style.css"/>
-        <title>Document</title>
-    </head>
-    <body>
-       
-
-            <div>
-                <h1 id="titulo">Formulário</h1>
-                <p id="subtitulo">Complete suas informações</p>
-               
-            <br>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <title>Document</title>
+</head>
+<body>  
+    <div class="tudo">
+        <div class="partedparte"></div>
+        <div class="parte1">
+            <h2 class="title title-primary">Bem vindo Dev!</h2>
+            <div class="p">
+                <p class="description description-primary">Cadastre suas informações no formulário</p>
             </div>
-
+            
+            <img src="top1.svg" alt="desenvolvedores" class="imagem">
+            
+        </div>
+        <div class="parte2">
             <form class="formulario">
-                <fieldset class="nomes">
-                    <div class="campo1">
-                        <label><strong>Nome</strong></label>
-                        <input type="text" name="nome" id="nome" required>
-                    </div>
-                    <div class="campo2">
-                        <label><strong>Sobrenome</strong></label>
-                        <input type="text" name="sobrenome" id="sobrenome"   required>
-                    </div>
-                </fieldset>
-                <br>
-                <br>
-                <br>
-                <div class="campo">
-                    <label><strong>E-mail</strong></label>
-                    <input type="email" name="email" id="email">
-                </div>
-
-               
-                    <label><strong>Qual aplicação você desenvolve?</strong></label>
-                    <label>
-                        <input type="radio" name="devweb" value="devweb" >Front-End
-                    </label>
-                    <label>
-                        <input type="radio" name="devweb" value="devback">Back-End
-                    </label>
-                    <label>
-                        <input type="radio" name="devweb" value="Fullstack"> Fullstack
-                    </label>
                 
-                    <br>
-                    <br>
-                <div class="campo">
-                    <label><strong>Senioridade</strong></label>
-                    <select id="senioridade">
-                        <option selected disabled >Selecione...</option>
-                        <option>Junior</option>
-                        <option>Pleno</option>
-                        <option>Senior</option>
-                    </select>
+                <div class="campo1">
+                    <input type="text" name="nome" id="nome" class="teste" placeholder="Nome" >
+                    <div class="underline" ></div>
+                    
                 </div>
                 
-
-                <fieldset>
-                    <div class="check">
-                        <label><strong>Quais destas opções você sabe utilizar?</strong></label><br><br>
-                        <input type="checkbox" id="tec1" name="tec1" valeu="tec1">
-                        <label for="tec1">HTML</label>
-                        <input type="checkbox" id="tec2" name="tec2" valeu="tec2">
-                        <label for="tec2">JAVA</label>
-                        <input type="checkbox" id="tec3" name="tec3" valeu="tec3">
-                        <label for="tec3">C</label>
-                        <input type="checkbox" id="tec4" name="tec4" valeu="tec4">
-                        <label for="tec4">C++</label>
-                        <input type="checkbox" id="tec5" name="tec5" valeu="tec5">
-                        <label for="tec5">PYTHON</label>
-                    </div>
-
-                </fieldset>
-
-                <div class="grupo">
-                    <br>
-                    <label><Strong>Conte um pouco da sua experiência</Strong></label><br><br>
-                    <textarea row="10" style="width: 30em   " id="experiencia" nome="experiencia" ></textarea>
+                <div class="campo1">
+                    <input type="text" name="sobrenome" id="sobrenome"  class="teste" placeholder="Sobrenome" >
+                    <div class="underline" ></div>
+                    
                 </div>
-                <button class="botao" type="submit">Concluido</button>
-            </form>
-    </body>
+                
+                <div class="campo1">
+                    
+                    <input type="email" name="email" id="email" class="teste" placeholder="E-mail" >
+                    <div class="underline" ></div>
+                </div>
+                
+                <div class ="aplicacao">
+                    <div class="t">
+                        <label>Qual aplicação você desenvolve?</label>
+                    </div>
+                    <div class="aplica">
+                        <input type="radio" name="dev" value="devFront" > 
+                        <label class="linha"></label>
+                        <label class="alinha"> Front - End </label>
+                        <label class="linha"></label>
+                        <input type="radio" name="dev" value="devBack">
+                        <label class="linha"></label>
+                        <label class="alinha"> Back - End </label>
+                        <label class="linha"></label>
+                        <input type="radio" name="dev" value="devFullS" >
+                        <label class="linha"></label>
+                        <label class="alinha"> FullStack  </label>
+                        
+                        <br></br>
+                    </div>
+                    
+                </div>
+            </fieldset>
+            <br></br>
+            <div class="campo1">
+                <div class="t">
+                    <label>Qual seu nível de senioridade?</label>
+                    <div class="tj">
+                        
+                    </div>
+                </div>
+                <select name="select" class="teste">
+                    <option value="Junior" selected>Nível - Junior</option>
+                    <option value="Pleno">Nível - Pleno</option>
+                    <option value="Senior">Nível - Senior</option>
+                </select>
+                <div class="underline" ></div>
+            </div>
+            
+            
+            <fieldset>
+                <div class="t">
+                    <label>Quais destas opções você sabe utilizar?</label><br></br>
+                </div>
+                <div class="mudar2">
+                    <label class="container"> Java
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container"> Python
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container"> C++
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container"> React
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    
+                </div>
+                
+            </fieldset>
+            
+            <button class="botao" type="submit">Enviar</button>
+        </form>
+        
+    </div> <!--parte2-->
+</div> <!-- parte de parte -->
+</div> <!-- tudo -->
+</body>
 </html>
